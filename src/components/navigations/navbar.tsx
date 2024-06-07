@@ -4,6 +4,16 @@ import { cn } from "@/lib/utils";
 import { motion } from "framer-motion";
 import { useState } from "react";
 import Link from "next/link";
+import { Button } from "@/components/ui/button";
+import {
+  Sheet,
+  SheetContent,
+  SheetDescription,
+  SheetHeader,
+  SheetTitle,
+  SheetTrigger,
+} from "@/components/ui/sheet";
+import { Menu } from "lucide-react";
 
 type Nav = {
   name: string;
@@ -70,6 +80,20 @@ export function Navbar() {
             </ul>
           </div>
           {/* Mobile */}
+          <Sheet>
+            <SheetTrigger className="block md:hidden">
+              <Menu />
+            </SheetTrigger>
+            <SheetContent side={"left"}>
+              <SheetHeader>
+                <SheetTitle>Are you absolutely sure?</SheetTitle>
+                <SheetDescription>
+                  This action cannot be undone. This will permanently delete
+                  your account and remove your data from our servers.
+                </SheetDescription>
+              </SheetHeader>
+            </SheetContent>
+          </Sheet>
         </div>
       </nav>
     </>
