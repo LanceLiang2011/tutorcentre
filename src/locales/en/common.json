@@ -1,0 +1,42 @@
+{
+  "home": {
+    "title": "Education X Exploration",
+    "slides": [
+      {
+        "image": "space2.jpg",
+        "title": "title",
+        "content": "content content content content content",
+        "slide": 0
+      },
+      {
+        "image": "reading1.jpeg",
+        "title": "title 2",
+        "content": "content content content content content",
+        "slide": 1
+      },
+      {
+        "image": "art2.jpeg",
+        "title": "title 3",
+        "content": "content content content content content",
+        "slide": 2
+      }
+    ]
+  },
+  "navbar": {
+    "navs": [
+      {
+        "name": "Premium Courses",
+        "link": "/"
+      },
+      {
+        "name": "Private Tutoring",
+        "link": "/"
+      },
+      {
+        "name": "Free Trial",
+        "link": "/"
+      }
+    ],
+    "lang": "en"
+  }
+}

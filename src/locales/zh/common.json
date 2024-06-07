@@ -1,0 +1,42 @@
+{
+  "home": {
+    "title": "教育 X 探索",
+    "slides": [
+      {
+        "image": "space2.jpg",
+        "title": "标题",
+        "content": "内容 内容 内容 内容 内容",
+        "slide": 0
+      },
+      {
+        "image": "reading1.jpeg",
+        "title": "标题 2",
+        "content": "内容 内容 内容 内容 内容",
+        "slide": 1
+      },
+      {
+        "image": "art2.jpeg",
+        "title": "标题 3",
+        "content": "内容 内容 内容 内容 内容",
+        "slide": 2
+      }
+    ]
+  },
+  "navbar": {
+    "navs": [
+      {
+        "name": "精品课程",
+        "link": "/"
+      },
+      {
+        "name": "一对一私教",
+        "link": "/"
+      },
+      {
+        "name": "免费试課",
+        "link": "/"
+      }
+    ],
+    "lang": "zh"
+  }
+}

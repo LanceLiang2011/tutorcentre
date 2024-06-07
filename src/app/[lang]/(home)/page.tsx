@@ -3,9 +3,14 @@ import Hero from "./home-components/hero";
 import ScrollGalaxy from "./home-components/scroll-galaxy";
 import CardGroup from "./home-components/card-group";
 import { loadTranslation } from "@/lib/i18n";
+import { LangParams } from "@/types";
 
-export default async function Home() {
-  const allContents = await loadTranslation();
+interface Props {
+  params: LangParams;
+}
+
+export default async function Home({ params }: Props) {
+  const allContents = await loadTranslation(params.lang);
   const homeContents = allContents["home"];
   return (
     <div className="flex flex-col items-center w-full mx-auto mt-16">

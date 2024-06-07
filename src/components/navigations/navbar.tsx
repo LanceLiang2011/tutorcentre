@@ -3,8 +3,9 @@
 import { cn } from "@/lib/utils";
 import { motion } from "framer-motion";
 import { useState } from "react";
+import { useRouter } from "next/navigation";
+import { usePathname } from "next/navigation";
 import Link from "next/link";
-import { Button } from "@/components/ui/button";
 import {
   Sheet,
   SheetContent,
@@ -14,20 +15,31 @@ import {
   SheetTrigger,
 } from "@/components/ui/sheet";
 import { Menu } from "lucide-react";
+import { Nav } from "@/types";
 
-type Nav = {
-  name: string;
-  link: string;
-};
+interface Props {
+  lang: "en" | "zh";
+  navs: Nav[];
+}
 
-const navs: Nav[] = [
-  { name: "Premium Courses", link: "/" },
-  { name: "One on One", link: "/" },
-  { name: "Free Trial", link: "/" },
-];
-
-export function Navbar() {
+export function Navbar({ lang, navs }: Props) {
   const [hoveredNavItem, setHoveredNavItem] = useState<string | null>(null);
+  const router = useRouter();
+  const currentPath = usePathname();
+
+  const handleLanguageSwitch = () => {
+    let newPath;
+
+    if (currentPath.startsWith("/en")) {
+      newPath = currentPath.replace("/en", "/zh");
+    } else if (currentPath.startsWith("/zh")) {
+      newPath = currentPath.replace("/zh", "/en");
+    } else {
+      newPath = lang === "en" ? `/zh${currentPath}` : `/en${currentPath}`;
+    }
+
+    router.push(newPath);
+  };
 
   return (
     <>
@@ -96,9 +108,12 @@ export function Navbar() {
           </Sheet>
           {/* Lang */}
           <div className="ml-4 bg-blue-700 py-1 px-2 md:py-2 md:px-4 rounded-xl md:translate-y-2 hover:bg-blue-800 transition-colors">
-            <Link className=" text-white md:text-xl" href={"/"}>
-              中文
-            </Link>
+            <button
+              className="text-white md:text-xl"
+              onClick={handleLanguageSwitch}
+            >
+              {lang === "en" ? "中文" : "English"}
+            </button>
           </div>
         </div>
       </nav>
