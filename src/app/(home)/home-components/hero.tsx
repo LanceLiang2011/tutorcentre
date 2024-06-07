@@ -67,7 +67,7 @@ export default function Hero() {
               <div className="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
                 <button
                   onClick={changePreviousPage}
-                  className="rounded-full bg-secondary w-12 h-12 md:w-16 md:h-16"
+                  className="rounded-full bg-foreground/90 w-12 h-12 md:w-16 md:h-16"
                 >
                   ❮
                 </button>
@@ -90,7 +90,7 @@ export default function Hero() {
                 </div>
                 <button
                   onClick={changeNextPage}
-                  className="rounded-full bg-secondary w-12 h-12 md:w-16 md:h-16"
+                  className="rounded-full bg-foreground/90 w-12 h-12 md:w-16 md:h-16"
                 >
                   ❯
                 </button>

@@ -18,7 +18,7 @@ export default function RootLayout({
   return (
     <html lang="en" data-theme="night">
       <body className={inter.className}>
-        <div className=" max-w-full mx-auto">
+        <div className=" max-w-full mx-auto text-background">
           <header className="z-10 flex w-full justify-stretch">
             <Navbar />
           </header>
