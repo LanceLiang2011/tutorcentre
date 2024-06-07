@@ -4,6 +4,7 @@ import { cn } from "@/lib/utils";
 import { motion } from "framer-motion";
 import { useState } from "react";
 import Link from "next/link";
+import { Button } from "@/components/ui/button";
 import {
   Sheet,
   SheetContent,
@@ -93,6 +94,12 @@ export function Navbar() {
               </SheetHeader>
             </SheetContent>
           </Sheet>
+          {/* Lang */}
+          <div className="ml-4 bg-blue-700 py-1 px-2 md:py-2 md:px-4 rounded-xl md:translate-y-2 hover:bg-blue-800 transition-colors">
+            <Link className=" text-white md:text-xl" href={"/"}>
+              中文
+            </Link>
+          </div>
         </div>
       </nav>
     </>
