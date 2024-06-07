@@ -4,7 +4,6 @@ import { cn } from "@/lib/utils";
 import { motion } from "framer-motion";
 import { useState } from "react";
 import Link from "next/link";
-import { Button } from "@/components/ui/button";
 import {
   Sheet,
   SheetContent,
@@ -21,7 +20,7 @@ type Nav = {
 };
 
 const navs: Nav[] = [
-  { name: "Home", link: "/" },
+  { name: "Premium Courses", link: "/" },
   { name: "One on One", link: "/" },
   { name: "Free Trial", link: "/" },
 ];
