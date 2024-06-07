@@ -60,7 +60,7 @@ export default function Hero({ slides }: Props) {
                     <h2 className=" text-5xl md:text-6xl bg-clip-text text-transparent drop-shadow-2xl bg-gradient-to-b from-white/80 to-white/20">
                       {content.title}
                     </h2>
-                    <p className=" md:text-xl font-semibold">
+                    <p className=" md:text-xl font-semibold px-2">
                       {content.content}
                     </p>
                   </motion.div>
