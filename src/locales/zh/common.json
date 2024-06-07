@@ -26,25 +26,29 @@
         "title": "辅导",
         "content": "小班辅导课程，满足您的学术需求。",
         "image": "tutor2.jpeg",
-        "link": "/zh/courses/tutoring"
+        "link": "/zh/courses/tutoring",
+        "lang": "zh"
       },
       {
         "title": "艺术课",
         "content": "通过有趣的艺术课程激发您的创造力。",
         "image": "art2.jpeg",
-        "link": "/zh/courses/art-classes"
+        "link": "/zh/courses/art-classes",
+        "lang": "zh"
       },
       {
         "title": "乐高机器人",
         "content": "通过互动乐高机器人课程学习机器人技术和编码。",
         "image": "lego1.jpeg",
-        "link": "/zh/courses/lego-robot"
+        "link": "/zh/courses/lego-robot",
+        "lang": "zh"
       },
       {
         "title": "法语学习",
         "content": "通过我们的综合学习课程掌握法语。",
         "image": "tutor1.jpeg",
-        "link": "/zh/courses/french-learning"
+        "link": "/zh/courses/french-learning",
+        "lang": "zh"
       }
     ]
   },

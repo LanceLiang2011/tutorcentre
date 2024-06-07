@@ -19,4 +19,5 @@ export type CourseCard = {
   content: string;
   image: string;
   link: string;
+  lang: "zh" | "en";
 };

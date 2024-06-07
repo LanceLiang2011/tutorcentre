@@ -26,25 +26,29 @@
         "title": "Tutoring",
         "content": "Small size tutoring sessions tailored to meet your academic needs.",
         "image": "tutor2.jpeg",
-        "link": "/en/courses/tutoring"
+        "link": "/en/courses/tutoring",
+        "lang": "en"
       },
       {
         "title": "Art Classes",
         "content": "Explore your creativity with our fun and engaging art classes.",
         "image": "art2.jpeg",
-        "link": "/en/courses/art-classes"
+        "link": "/en/courses/art-classes",
+        "lang": "en"
       },
       {
         "title": "Lego Robot",
         "content": "Learn robotics and coding with our interactive Lego Robot course.",
         "image": "lego1.jpeg",
-        "link": "/en/courses/lego-robot"
+        "link": "/en/courses/lego-robot",
+        "lang": "en"
       },
       {
         "title": "French Learning",
         "content": "Master the French language with our comprehensive learning program.",
         "image": "tutor1.jpeg",
-        "link": "/en/courses/french-learning"
+        "link": "/en/courses/french-learning",
+        "lang": "en"
       }
     ]
   },
