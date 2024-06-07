@@ -19,7 +19,7 @@ export default function RootLayout({
     <html lang="en" data-theme="night">
       <body className={inter.className}>
         <div className=" max-w-full mx-auto">
-          <header className="z-10">
+          <header className="z-10 flex w-full justify-stretch">
             <Navbar />
           </header>
           <main className=" z-0">{children}</main>

@@ -12,7 +12,7 @@ type Content = {
 
 const contents: Content[] = [
   {
-    image: "art1.jpeg",
+    image: "space2.jpg",
     title: "title",
     content: "content content content content content",
     slide: 0,
@@ -22,6 +22,12 @@ const contents: Content[] = [
     title: "title 2",
     content: "content content content content content",
     slide: 1,
+  },
+  {
+    image: "art2.jpeg",
+    title: "title 3",
+    content: "content content content content content",
+    slide: 2,
   },
 ];
 
@@ -61,11 +67,11 @@ export default function Hero() {
               <div className="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
                 <button
                   onClick={changePreviousPage}
-                  className="rounded-full bg-secondary p-6"
+                  className="rounded-full bg-secondary w-12 h-12 md:w-16 md:h-16"
                 >
                   ❮
                 </button>
-                <div className="absolute rounded-md bg-slate-600/80 inset-4 -z-10 text-center w-4/5 md:w-3/5 mx-auto h-72 -translate-y-1/2 flex flex-col gap-8 pt-16">
+                <div className="absolute rounded-xl bg-slate-600/80 inset-4 -z-10 text-center w-4/5 md:w-3/5 mx-auto h-72 -translate-y-1/2 flex flex-col gap-8 pt-16">
                   <h2 className=" text-5xl md:text-6xl bg-clip-text text-transparent drop-shadow-2xl bg-gradient-to-b from-white/80 to-white/20">
                     {content.title}
                   </h2>
@@ -73,7 +79,7 @@ export default function Hero() {
                 </div>
                 <button
                   onClick={changeNextPage}
-                  className="rounded-full bg-secondary p-6"
+                  className="rounded-full bg-secondary w-12 h-12 md:w-16 md:h-16"
                 >
                   ❯
                 </button>
