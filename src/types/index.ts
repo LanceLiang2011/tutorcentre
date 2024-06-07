@@ -13,3 +13,10 @@ export type Nav = {
   name: string;
   link: string;
 };
+
+export type CourseCard = {
+  title: string;
+  content: string;
+  image: string;
+  link: string;
+};

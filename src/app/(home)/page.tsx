@@ -20,7 +20,7 @@ export default async function Home() {
           </p>
         </div>
       </BackgroundGradientAnimation>
-      <CardGroup />
+      <CardGroup cards={homeContents.courseCards} />
     </div>
   );
 }

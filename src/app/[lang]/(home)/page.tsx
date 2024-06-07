@@ -1,7 +1,7 @@
 import { BackgroundGradientAnimation } from "@/components/ui/background-gradient-animation";
-import Hero from "./home-components/hero";
-import ScrollGalaxy from "./home-components/scroll-galaxy";
-import CardGroup from "./home-components/card-group";
+import Hero from "../../(home)/home-components/hero";
+import ScrollGalaxy from "../../(home)/home-components/scroll-galaxy";
+import CardGroup from "../../(home)/home-components/card-group";
 import { loadTranslation } from "@/lib/i18n";
 import { LangParams } from "@/types";
 
@@ -25,7 +25,7 @@ export default async function Home({ params }: Props) {
           </p>
         </div>
       </BackgroundGradientAnimation>
-      <CardGroup />
+      <CardGroup cards={homeContents.courseCards} />
     </div>
   );
 }

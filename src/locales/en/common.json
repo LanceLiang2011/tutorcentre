@@ -4,21 +4,47 @@
     "slides": [
       {
         "image": "space2.jpg",
-        "title": "title",
-        "content": "content content content content content",
+        "title": "Potential",
+        "content": "Unlock Your Child's Potential: Explore the Power of Education and Discovery",
         "slide": 0
       },
       {
         "image": "reading1.jpeg",
-        "title": "title 2",
-        "content": "content content content content content",
+        "title": "Discovery",
+        "content": "Nurturing Young Minds: Where Learning and Discovery Thrive",
         "slide": 1
       },
       {
-        "image": "art2.jpeg",
-        "title": "title 3",
-        "content": "content content content content content",
+        "image": "art1.jpeg",
+        "title": "Growth",
+        "content": "Inspiring Growth Through Knowledge and Adventure",
         "slide": 2
+      }
+    ],
+    "courseCards": [
+      {
+        "title": "Tutoring",
+        "content": "Small size tutoring sessions tailored to meet your academic needs.",
+        "image": "tutor2.jpeg",
+        "link": "/en/courses/tutoring"
+      },
+      {
+        "title": "Art Classes",
+        "content": "Explore your creativity with our fun and engaging art classes.",
+        "image": "art2.jpeg",
+        "link": "/en/courses/art-classes"
+      },
+      {
+        "title": "Lego Robot",
+        "content": "Learn robotics and coding with our interactive Lego Robot course.",
+        "image": "lego1.jpeg",
+        "link": "/en/courses/lego-robot"
+      },
+      {
+        "title": "French Learning",
+        "content": "Master the French language with our comprehensive learning program.",
+        "image": "tutor1.jpeg",
+        "link": "/en/courses/french-learning"
       }
     ]
   },

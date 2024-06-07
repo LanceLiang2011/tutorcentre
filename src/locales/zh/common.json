@@ -4,21 +4,47 @@
     "slides": [
       {
         "image": "space2.jpg",
-        "title": "标题",
-        "content": "内容 内容 内容 内容 内容",
+        "title": "潜力",
+        "content": "释放孩子的潜力：探索教育和发现的力量",
         "slide": 0
       },
       {
         "image": "reading1.jpeg",
-        "title": "标题 2",
-        "content": "内容 内容 内容 内容 内容",
+        "title": "发现",
+        "content": "培养年轻的心灵：在学习和发现中茁壮成长",
         "slide": 1
       },
       {
-        "image": "art2.jpeg",
-        "title": "标题 3",
-        "content": "内容 内容 内容 内容 内容",
+        "image": "art1.jpeg",
+        "title": "成长",
+        "content": "通过知识和冒险激发成长",
         "slide": 2
+      }
+    ],
+    "courseCards": [
+      {
+        "title": "辅导",
+        "content": "小班辅导课程，满足您的学术需求。",
+        "image": "tutor2.jpeg",
+        "link": "/zh/courses/tutoring"
+      },
+      {
+        "title": "艺术课",
+        "content": "通过有趣的艺术课程激发您的创造力。",
+        "image": "art2.jpeg",
+        "link": "/zh/courses/art-classes"
+      },
+      {
+        "title": "乐高机器人",
+        "content": "通过互动乐高机器人课程学习机器人技术和编码。",
+        "image": "lego1.jpeg",
+        "link": "/zh/courses/lego-robot"
+      },
+      {
+        "title": "法语学习",
+        "content": "通过我们的综合学习课程掌握法语。",
+        "image": "tutor1.jpeg",
+        "link": "/zh/courses/french-learning"
       }
     ]
   },
@@ -29,7 +55,7 @@
         "link": "/"
       },
       {
-        "name": "一对一私教",
+        "name": "私人辅导",
         "link": "/"
       },
       {
