@@ -71,11 +71,22 @@ export default function Hero() {
                 >
                   ❮
                 </button>
-                <div className="absolute rounded-xl bg-slate-600/80 inset-4 -z-10 text-center w-4/5 md:w-3/5 mx-auto h-72 -translate-y-1/2 flex flex-col gap-8 pt-16">
-                  <h2 className=" text-5xl md:text-6xl bg-clip-text text-transparent drop-shadow-2xl bg-gradient-to-b from-white/80 to-white/20">
-                    {content.title}
-                  </h2>
-                  <p className=" md:text-xl font-semibold">{content.content}</p>
+                <div className="absolute inset-4 -z-10 w-4/5 md:w-3/5 mx-auto h-72 -translate-y-1/2">
+                  <motion.div
+                    whileHover={{
+                      scale: 1.2,
+                      transition: { duration: 0.6 },
+                    }}
+                    transition={{ duration: 0.8 }}
+                    className=" rounded-xl w-full h-full bg-slate-600/80  text-center flex flex-col gap-8 pt-16"
+                  >
+                    <h2 className=" text-5xl md:text-6xl bg-clip-text text-transparent drop-shadow-2xl bg-gradient-to-b from-white/80 to-white/20">
+                      {content.title}
+                    </h2>
+                    <p className=" md:text-xl font-semibold">
+                      {content.content}
+                    </p>
+                  </motion.div>
                 </div>
                 <button
                   onClick={changeNextPage}
