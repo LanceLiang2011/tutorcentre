@@ -33,8 +33,8 @@ export function Navbar() {
     <>
       <nav className=" w-full">
         <div className="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-4">
-          <a
-            href="https://flowbite.com/"
+          <Link
+            href="/"
             className="flex items-center justify-center mr-auto space-x-3 rtl:space-x-reverse"
           >
             <img
@@ -45,7 +45,7 @@ export function Navbar() {
             <span className="hidden md:block self-center text-2xl font-semibold whitespace-nowrap ">
               Denison Tutoring
             </span>
-          </a>
+          </Link>
           {/* Desktop */}
           <div
             className="hidden w-full md:block md:w-auto"
