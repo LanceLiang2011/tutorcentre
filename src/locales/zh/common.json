@@ -5,47 +5,47 @@
       {
         "image": "space2.jpg",
         "title": "潜力",
-        "content": "释放孩子的潜力：探索教育和发现的力量",
+        "content": "激发孩子的潜力：探索教育与发现的力量",
         "slide": 0
       },
       {
         "image": "reading1.jpeg",
         "title": "发现",
-        "content": "培养年轻的心灵：在学习和发现中茁壮成长",
+        "content": "培养年轻的头脑：学习与发现的乐园",
         "slide": 1
       },
       {
         "image": "art1.jpeg",
         "title": "成长",
-        "content": "通过知识和冒险激发成长",
+        "content": "通过知识与冒险激发成长",
         "slide": 2
       }
     ],
     "courseCards": [
       {
-        "title": "辅导",
+        "title": "课业辅导",
         "content": "小班辅导课程，满足您的学术需求。",
         "image": "tutor2.jpeg",
-        "link": "/zh/courses/tutoring",
+        "link": "/zh/courses/curriculum",
         "lang": "zh"
       },
       {
-        "title": "艺术课",
-        "content": "通过有趣的艺术课程激发您的创造力。",
+        "title": "艺术课程",
+        "content": "通过有趣和有吸引力的艺术课程探索您的创造力。",
         "image": "art2.jpeg",
-        "link": "/zh/courses/art-classes",
+        "link": "/zh/courses/art",
         "lang": "zh"
       },
       {
         "title": "乐高机器人",
-        "content": "通过互动乐高机器人课程学习机器人技术和编码。",
+        "content": "通过互动的乐高机器人课程学习机器人技术和编程。",
         "image": "lego1.jpeg",
         "link": "/zh/courses/lego-robot",
         "lang": "zh"
       },
       {
         "title": "法语学习",
-        "content": "通过我们的综合学习课程掌握法语。",
+        "content": "通过我们全面的学习计划掌握法语。",
         "image": "tutor1.jpeg",
         "link": "/zh/courses/french-learning",
         "lang": "zh"
@@ -55,18 +55,68 @@
   "navbar": {
     "navs": [
       {
-        "name": "精品课程",
-        "link": "/"
+        "name": "课业辅导",
+        "link": "/zh/curriculum"
       },
       {
-        "name": "私人辅导",
-        "link": "/"
+        "name": "艺考辅导",
+        "link": "/zh/art"
       },
       {
-        "name": "免费试課",
-        "link": "/"
+        "name": "师资力量",
+        "link": "/zh/instructors"
+      },
+      {
+        "name": "文化活动",
+        "link": "/zh/activities"
+      },
+      {
+        "name": "预约试听",
+        "link": "/zh/trial"
       }
     ],
     "lang": "zh"
+  },
+  "curriculum": {
+    "title": "课业辅导",
+    "tagline": "通过个性化学习和专家指导赋予学生力量",
+    "courses": [
+      {
+        "name": "数学",
+        "grades": [
+          { "grade": "五年级到七年级", "time": "周六 3:00 PM - 4:15PM" },
+          { "grade": "七年级到九年级", "time": "周六 4:20 PM - 5:30PM" },
+          { "grade": "三年级到五年级", "time": "周六 4:20 PM - 5:30PM" },
+          { "grade": "私人课程", "time": "面议" }
+        ]
+      },
+      {
+        "name": "法语",
+        "grades": [
+          { "grade": "四年级到六年级", "time": "周三 5:30 PM - 6:40PM" }
+        ]
+      },
+      {
+        "name": "写作",
+        "grades": [
+          { "grade": "四年级到六年级", "time": "周三 4:30 PM - 5:30PM" },
+          { "grade": "私人课程", "time": "周三 5:30 PM - 6:30PM" }
+        ]
+      },
+      {
+        "name": "乐高机器人",
+        "grades": [
+          { "grade": "四年级到六年级", "time": "周六 3:00 PM - 4:00PM" }
+        ]
+      },
+      {
+        "name": "编程",
+        "grades": [{ "grade": "六年级到九年级", "time": "待定" }]
+      }
+    ]
+  },
+  "artContents": {
+    "title": "艺考辅导",
+    "tagline": "通过有趣和有吸引力的艺术课程探索您的创造力"
   }
 }

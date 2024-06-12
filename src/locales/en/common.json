@@ -76,5 +76,47 @@
       }
     ],
     "lang": "en"
+  },
+  "curriculum": {
+    "title": "Curriculum Tutoring",
+    "tagline": "Empowering Students with Personalized Learning and Expert Guidance",
+    "courses": [
+      {
+        "name": "Math",
+        "grades": [
+          { "grade": "Grade 5 to Grade 7", "time": "Sat 3:00 PM - 4:15PM" },
+          { "grade": "Grade 7 to Grade 9", "time": "Sat 4:20 PM - 5:30PM" },
+          { "grade": "Grade 3 to Grade 5", "time": "Sat 4:20 PM - 5:30PM" },
+          { "grade": "Private Course", "time": "TBA" }
+        ]
+      },
+      {
+        "name": "French",
+        "grades": [
+          { "grade": "Grade 4 to Grade 6", "time": "Wed 5:30 PM - 6:40PM" }
+        ]
+      },
+      {
+        "name": "Writing",
+        "grades": [
+          { "grade": "Grade 4 to Grade 6", "time": "Wed 4:30 PM - 5:30PM" },
+          { "grade": "Private Course", "time": "Wed 5:30 PM - 6:30PM" }
+        ]
+      },
+      {
+        "name": "Lego Robotics",
+        "grades": [
+          { "grade": "Grade 4 to Grade 6", "time": "Sat 3:00 PM - 4:00PM" }
+        ]
+      },
+      {
+        "name": "Programming",
+        "grades": [{ "grade": "Grade 6 to Grade 9", "time": "TBA" }]
+      }
+    ]
+  },
+  "artContents": {
+    "title": "Art Classes",
+    "tagline": "Inspiring Growth Through Knowledge and Adventure"
   }
 }
