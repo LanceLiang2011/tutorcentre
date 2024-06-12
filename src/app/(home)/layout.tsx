@@ -19,7 +19,7 @@ export default async function RootLayout({
   const allContents = await loadTranslation();
   const navbarContents = allContents["navbar"];
   return (
-    <html lang="en" data-theme="night">
+    <html lang="en">
       <body className={inter.className}>
         <div className=" max-w-full mx-auto text-background">
           <header className="z-10 flex w-full justify-stretch">

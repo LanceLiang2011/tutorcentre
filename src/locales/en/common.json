@@ -26,14 +26,14 @@
         "title": "Tutoring",
         "content": "Small size tutoring sessions tailored to meet your academic needs.",
         "image": "tutor2.jpeg",
-        "link": "/en/courses/tutoring",
+        "link": "/en/courses/curriculum",
         "lang": "en"
       },
       {
         "title": "Art Classes",
         "content": "Explore your creativity with our fun and engaging art classes.",
         "image": "art2.jpeg",
-        "link": "/en/courses/art-classes",
+        "link": "/en/courses/art",
         "lang": "en"
       },
       {
@@ -55,16 +55,24 @@
   "navbar": {
     "navs": [
       {
-        "name": "Premium Courses",
-        "link": "/"
+        "name": "Curriculum Tutoring",
+        "link": "/en/curriculum"
       },
       {
-        "name": "Private Tutoring",
-        "link": "/"
+        "name": "Art Tutoring",
+        "link": "/en/art"
+      },
+      {
+        "name": "Instructors",
+        "link": "/en/instructors"
+      },
+      {
+        "name": "Cultural Activities",
+        "link": "/en/activities"
       },
       {
         "name": "Free Trial",
-        "link": "/"
+        "link": "/en/trial"
       }
     ],
     "lang": "en"

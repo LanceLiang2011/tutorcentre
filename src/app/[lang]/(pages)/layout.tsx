@@ -24,9 +24,13 @@ export default async function RootLayout({
   return (
     <html lang={params.lang}>
       <body className={inter.className}>
-        <div className=" max-w-full mx-auto text-background">
+        <div className=" max-w-full mx-auto">
           <header className="z-10 flex w-full justify-stretch">
-            <Navbar lang={navbarContents.lang} navs={navbarContents.navs} />
+            <Navbar
+              mode="light"
+              lang={navbarContents.lang}
+              navs={navbarContents.navs}
+            />
           </header>
           <main className=" z-0">{children}</main>
           <footer></footer>

@@ -11,7 +11,6 @@ import {
   SheetContent,
   SheetDescription,
   SheetHeader,
-  SheetTitle,
   SheetTrigger,
 } from "@/components/ui/sheet";
 import { Menu } from "lucide-react";
@@ -19,10 +18,11 @@ import { Nav } from "@/types";
 
 interface Props {
   lang: "en" | "zh";
+  mode?: "dark" | "light";
   navs: Nav[];
 }
 
-export function Navbar({ lang, navs }: Props) {
+export function Navbar({ lang, navs, mode = "dark" }: Props) {
   const [hoveredNavItem, setHoveredNavItem] = useState<string | null>(null);
   const router = useRouter();
   const currentPath = usePathname();
@@ -67,24 +67,24 @@ export function Navbar({ lang, navs }: Props) {
             <ul className="flex gap-8 p-4 md:p-0 mt-4 text-xl">
               {navs.map((nav) => (
                 <li key={nav.link} className="hover:text-blue-400 relative">
-                  {hoveredNavItem === nav.name && (
-                    <motion.div
-                      layoutId="hovered-backdrop"
-                      className="absolute h-20 w-20"
-                    >
-                      <img
-                        className=" w-full h-full translate-y-4 object-fill"
-                        alt="rocket doge"
-                        src="images/clown-dog-internet-doge.gif"
-                      />
-                    </motion.div>
-                  )}
                   <Link
                     href={nav.link}
-                    className="block py-2 px-3 rounded md:bg-transparent  md:p-0 "
+                    className="block rounded md:bg-transparent p-0 z-10"
                     aria-current="page"
                     onMouseEnter={() => setHoveredNavItem(nav.name)}
                   >
+                    {hoveredNavItem === nav.name && (
+                      <motion.div
+                        layoutId="hovered-backdrop"
+                        className="absolute h-20 w-20"
+                      >
+                        <img
+                          className=" w-full h-full translate-y-4 object-fill"
+                          alt="rocket doge"
+                          src="/images/clown-dog-internet-doge.gif"
+                        />
+                      </motion.div>
+                    )}
                     {nav.name}
                   </Link>
                 </li>
@@ -96,12 +96,21 @@ export function Navbar({ lang, navs }: Props) {
             <SheetTrigger className="block md:hidden">
               <Menu />
             </SheetTrigger>
-            <SheetContent side={"left"}>
+            <SheetContent
+              className={cn({ "bg-slate-900": mode === "dark" })}
+              side={"left"}
+            >
               <SheetHeader>
-                <SheetTitle>Are you absolutely sure?</SheetTitle>
-                <SheetDescription>
-                  This action cannot be undone. This will permanently delete
-                  your account and remove your data from our servers.
+                <SheetDescription
+                  className={cn({ "text-slate-50": mode === "dark" })}
+                >
+                  <ul className=" text-xl mt-24 flex flex-col gap-8">
+                    {navs.map((nav) => (
+                      <li key={nav.link}>
+                        <Link href={nav.link}>{nav.name}</Link>
+                      </li>
+                    ))}
+                  </ul>
                 </SheetDescription>
               </SheetHeader>
             </SheetContent>
